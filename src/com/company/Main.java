@@ -3,10 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         Car car = new Car(new ElectricEngine());
         Car2 car2 = new Car2();
     }
+
     static class Validator {
         protected boolean validate(String text) {
             return true;
@@ -24,6 +24,11 @@ public class Main {
     static class Car {
         private Engine engine;
 
+        /**
+         * констурктор создания машины
+         *
+         * @param engine параметр двигатнеля, который может быть разным
+         */
         public Car(Engine engine) {
             this.engine = engine;
         }
